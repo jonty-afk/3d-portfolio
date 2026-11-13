@@ -6,7 +6,7 @@ I built it to learn Three.js and to have one page that links my other repos toge
 
 ## Run it
 
-Needs Node.js 18 or newer.
+Needs Node.js 20.19 or newer (Vite 8 requires it).
 
 ```
 npm install
