@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rishabh Sharma: customer service supervisor in Auckland with a Diploma in IT. An interactive 3D intro to my projects." />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Rishabh Sharma | Projects</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">Skip to project list</a>
+
+    <header class="site-header">
+      <p class="eyebrow">Auckland, New Zealand</p>
+      <h1>Rishabh Sharma</h1>
+      <p class="lead">
+        Customer service supervisor with a Diploma in Information Technology. I like the technical
+        side of helping people, so I build small tools for the problems I see at work.
+      </p>
+    </header>
+
+    <main>
+      <section id="stage" class="stage" aria-label="Interactive project ring">
+        <canvas
+          id="scene"
+          role="img"
+          aria-label="Six 3D shapes arranged in a ring, one for each project. The same projects are in the list below."
+        ></canvas>
+        <p id="fallback-note" class="fallback-note" hidden>
+          The 3D view could not start in this browser. Everything is still available in the list.
+        </p>
+        <button id="motion-toggle" class="motion-toggle" type="button">Pause motion</button>
+      </section>
+
+      <div class="content">
+        <nav id="projects" class="projects" aria-label="Projects">
+          <h2>Projects</h2>
+          <ul id="project-list"></ul>
+          <div class="stepper">
+            <button id="prev" type="button">Previous</button>
+            <button id="next" type="button">Next</button>
+          </div>
+        </nav>
+
+        <section id="detail" class="detail" aria-live="polite" aria-label="Project details"></section>
+      </div>
+
+      <section class="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About me</h2>
+        <p>
+          I have spent over seven years in frontline customer service at Woolworths in Mt Eden, five
+          of them as an Online Supervisor: leading a team on shift, handling complaints and refunds,
+          answering phones and training new staff. I also founded and ran The Cleanic, a short-stay
+          cleaning business, and built its website.
+        </p>
+        <p>
+          I am looking for a service desk or IT support role in Auckland. More of my work is on
+          <a href="https://github.com/jonty-afk">GitHub</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built with Three.js and Vite.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
